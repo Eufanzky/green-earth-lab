@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import "tailwindcss/tailwind.css";
 import Navbar from "../components/NavBar";
+import Swiper from "../components/Swiper";
+
 
 const Huellas = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -59,6 +61,9 @@ const Huellas = () => {
             &#9654;
           </button>
         </div>
+
+
+        <Swiper/>
       </div>
     </>
   );
