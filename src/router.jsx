@@ -12,6 +12,7 @@ import Biodiversidad from './pages/Biodiversidad';
 import Clima from './pages/Clima';
 import Ods from './pages/ODS';
 import NotFound from './pages/NotFound';
+import { Recursos } from './pages/Recursos';
 
 const AppRouter = () => {
   return (
@@ -26,6 +27,7 @@ const AppRouter = () => {
         <Route path="/Biodiversidad" element={<Biodiversidad />} />
         <Route path="/clima" element={<Clima />} />
         <Route path="/ods" element={<Ods />} />
+        <Route path="/recursos" element={<Recursos />} />
         <Route path="*" element={<NotFound />} /> {/* 404 Page */}
       </Routes>
     </Router>
