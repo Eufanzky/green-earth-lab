@@ -6,6 +6,8 @@ import Slider from "../components/Slider";
 import styles from "../styles/Huellas.module.css";
 import stylesGlass from "../styles/Glass.module.css"; // Importa el archivo CSS correctamente
 import PresentationTemplate from "../components/PresentationTemplate";
+import AIQuizzCreator from "../components/AIQuizzCreator";
+
 
 
 const Huellas = () => {
@@ -64,10 +66,17 @@ const Huellas = () => {
   const title = "Explora las Huellas del Pasado en el Cambio Climático";
   const description = "Las huellas del pasado son vitales para entender cómo nuestro planeta ha respondido a los cambios climáticos a lo largo de la historia. A través de la investigación de anillos de árboles, sedimentos y capas de hielo, podemos descifrar patrones climáticos y eventos históricos que han moldeado nuestro entorno. Estos registros no solo nos brindan una visión sobre las condiciones climáticas del pasado, sino que también nos enseñan valiosas lecciones sobre la resiliencia de los ecosistemas y la capacidad de adaptación de las sociedades humanas. Al aprender de las experiencias del pasado, podemos enfrentar los desafíos climáticos actuales y futuros con conocimiento y determinación, trabajando juntos por un mundo más sostenible."
 
+  const data = {
+    title,
+    description,
+    slides
+  }
+
   return (
     <>
       <Navbar />
       <PresentationTemplate title={title} description={description} slides={slides} />
+      <AIQuizzCreator data={data}/>
     </>
   );
 };

@@ -5,7 +5,7 @@ import Navbar from "../components/NavBar";
 import Slider from "../components/Slider";
 import styles from '../styles/Huellas.module.css';
 import PresentationTemplate from "../components/PresentationTemplate";
-
+import AIQuizzCreator from "../components/AIQuizzCreator";
 
 
 const Curiosidades = () => {
@@ -28,11 +28,18 @@ const Curiosidades = () => {
   const title = "La Urgencia de Proteger Nuestro Planeta: Costos y Realidades del Cambio Climático";
   const description = "En un mundo cada vez más afectado por el cambio climático, la necesidad de preservar nuestros ecosistemas se vuelve crítica. La conservación de la naturaleza no solo es una cuestión de ética ambiental, sino también una decisión económica inteligente. Por ejemplo, mientras que construir infraestructuras costosas para proteger las costas, como muros marinos, puede alcanzar cifras astronómicas, conservar arrecifes naturales es significativamente más barato y sostenible. Además, 2016 marcó un hito como el año más cálido registrado, lo que nos recuerda la urgencia de actuar frente a las crecientes temperaturas y sus efectos devastadores. Es momento de reflexionar sobre nuestras acciones y tomar decisiones que prioricen la salud de nuestro planeta para las generaciones futuras."
 
+  const data = {
+    title,
+    description,
+    slides
+  }
+
 
   return (
     <>
       <Navbar />
       <PresentationTemplate title={title} description={description} slides={slides}/>
+      <AIQuizzCreator data={data}/>
     </>
   );
 };
