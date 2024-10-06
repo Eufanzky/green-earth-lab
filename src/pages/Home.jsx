@@ -24,7 +24,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-[#EDEFE6]"> {/* Utiliza min-h-screen para ajustarse al tamaño de la pantalla */}
+    <div className="w-full min-h-screen bg-gradient-to-b from-[#34cf6d] to-white"> {/* Utiliza min-h-screen para ajustarse al tamaño de la pantalla */}
       <Navbar />
       <div className="flex flex-col justify-center lg:mt-16 lg:mb-20 pt-5">
         <h1 className="text-3xl lg:text-4xl font-bold text-black m">Conéctate con la Tierra: 
@@ -38,7 +38,7 @@ const Home = () => {
         {/* Primera Columna */}
         <div className="mb-5 order-2 lg:order-1 flex flex-col space-y-4 lg:w-1/3 gap-3">
           {menuItems1.map((item, index) => (
-           <MenuCard key={index} title={item.title} icon={item.icon} />
+           <MenuCard key={index} title={item.title} icon={item.icon} link={item.link}/>
           ))}
         </div>
 

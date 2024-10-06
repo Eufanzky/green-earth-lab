@@ -24,13 +24,16 @@ const Slider = ({ slides }) => {
   >
     {
       slides.map((slide, index) => (
-        <SwiperSlide key={index} className='shadow-md p-1 rounded-lg"'>
+        <SwiperSlide key={index} className='p-1 rounded-lg"'>
+          <div className='w-full px-36'>
           <img
             src={slide.image}
             alt={slide.description}
-            className="w-full h-52 object-cover rounded-lg mb-10"
+            className="w-full h-52 object-cover rounded-lg mb-10 border-black border-2"
           />
           <p className='mt-10 text-white font-bold text-sm mb-10'>{slide.description}</p>
+
+          </div>
         </SwiperSlide>
       ))
     }
