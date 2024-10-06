@@ -20,7 +20,7 @@ const Home = () => {
   const menuItems2 = [
     { title: 'Biodiversidad en Peligro', icon: icon4, link: '/biodiversidad' },
     { title: 'Curiosidades Verdes', icon: icon5, link: '/curiosidades' },
-    { title: 'Reto GreenEarth', icon: icon6, link: '/retos' },
+    { title: 'Reto GreenEarth', icon: icon6, link: '/Retos' },
   ];
 
   return (
@@ -55,7 +55,7 @@ const Home = () => {
         {/* Segunda Columna */}
         <div className="order-3 lg:order-3 flex flex-col space-y-4 lg:w-1/3 gap-3">
           {menuItems2.map((item, index) => (
-            <MenuCard key={index} title={item.title} icon={item.icon} />
+            <MenuCard key={index} title={item.title} icon={item.icon} link={item.link}/>
           ))}
         </div>
 
