@@ -38,13 +38,13 @@ const Retos = () => {
         </div>
         <div className="flex space-x-8 justify-center">
           <a
-            href="https://puzzel.org/es/crossword/play?p=-O8THX1M8Gf_ZmSs-A6l"
+            href="https://puzzel.org/es/jigsaw/play?p=-O8WALIXByIrGfz4Mz1E"
             className="border-2 border-black text-black bg-transparent px-8 py-6 rounded-full text-2xl font-semibold shadow-lg hover:bg-green-500 hover:text-white hover:border-green-500 transition duration-300 ease-in-out"
           >
             🧩 Rompecabezas Climático
           </a>
           <a
-            href="https://puzzel.org/es/crossword/play?p=-O8THX1M8Gf_ZmSs-A6l"
+            href="https://puzzel.org/es/memory/play?p=-O8WDDBQ80LOwwWh2-PZ"
             className="border-2 border-black text-black bg-transparent px-8 py-6 rounded-full text-2xl font-semibold shadow-lg hover:bg-green-500 hover:text-white hover:border-green-500 transition duration-300 ease-in-out"
           >
             ⏳ Adivina el pasado
