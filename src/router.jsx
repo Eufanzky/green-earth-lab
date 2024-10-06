@@ -9,6 +9,8 @@ import Retos from './pages/Retos';
 import Soluciones from './pages/Soluciones';
 import Curiosidades from './pages/Curiosidades';
 import Biodiversidad from './pages/Biodiversidad';
+import Clima from './pages/Clima';
+import Ods from './pages/ODS';
 import NotFound from './pages/NotFound';
 
 const AppRouter = () => {
@@ -22,6 +24,8 @@ const AppRouter = () => {
         <Route path="/soluciones" element={<Soluciones />} />
         <Route path="/curiosidades" element={<Curiosidades />} />
         <Route path="/Biodiversidad" element={<Biodiversidad />} />
+        <Route path="/clima" element={<Clima />} />
+        <Route path="/ods" element={<Ods />} />
         <Route path="*" element={<NotFound />} /> {/* 404 Page */}
       </Routes>
     </Router>
