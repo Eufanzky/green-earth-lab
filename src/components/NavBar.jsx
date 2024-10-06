@@ -17,17 +17,17 @@ const Navbar = () => {
 
         {/* Links (Hidden on small screens) */}
         <div className="hidden md:flex space-x-6 text-white">
-          <a href="#" className="hover:text-gray-300">
-            Home
+          <a href="/ods" className="hover:text-gray-300">
+            Desafíos ODS
           </a>
           <a href="#" className="hover:text-gray-300">
-            About
+            Noticias
           </a>
           <a href="#" className="hover:text-gray-300">
-            Services
+            Sobre Nosotros
           </a>
           <a href="#" className="hover:text-gray-300">
-            Contact
+            Recursos
           </a>
         </div>
 
