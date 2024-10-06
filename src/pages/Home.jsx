@@ -1,5 +1,6 @@
 import React from 'react';
 import myGif from '../assets/13odss.gif'; // Importa el GIF correctamente
+import myEarthGif from '../assets/tierra1.gif'; // Importa el GIF correctamente
 import icon1 from '../assets/huella.png'; 
 import icon2 from '../assets/foco.png'; 
 import icon3 from '../assets/clima global.png'; 

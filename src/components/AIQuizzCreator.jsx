@@ -76,6 +76,7 @@ const AIQuizzCreator = ({ data }) => {
     }
   };
 
+  /*
   const quizData = [
     {
       optionA:
@@ -158,10 +159,11 @@ const AIQuizzCreator = ({ data }) => {
         "La investigación de los anillos de árboles, sedimentos y capas de hielo tiene como objetivo principal:",
     },
   ];
+  */
 
   return (
     <>
-      <div className="bg-gradient-to-b from-blue-500 to-[#FA8207]">
+      <div className="pb-12 bg-gradient-to-b from-blue-500 to-[#FA8207]">
         <h2 className="text-xl font-bold">AI QUIZ CREATOR</h2>
         <button
           className="mt-2 px-4 py-2 bg-[#FA8207] text-white rounded-md hover:bg-[#FA8C16] transition duration-300"
@@ -171,7 +173,7 @@ const AIQuizzCreator = ({ data }) => {
         </button>
         {story && <QuizGenerator quizData={story} />}
 
-        <QuizGenerator quizData={quizData}/>
+        {/*<QuizGenerator quizData={quizData}/>*/}
       </div>
     </>
   );
