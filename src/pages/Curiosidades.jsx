@@ -5,6 +5,7 @@ import Navbar from "../components/NavBar";
 import Slider from "../components/Slider";
 import styles from '../styles/Huellas.module.css';
 
+
 const Curiosidades = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 

@@ -10,6 +10,7 @@ import Navbar from '../components/NavBar'; // Asegúrate de tener este component
 import MenuCard from '../components/MenuCard';
 
 
+
 const Home = () => {
   const menuItems1 = [
     { title: 'Huellas del Pasado', icon: icon1, link: '/huellas' },
@@ -24,7 +25,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-b from-[#34cf6d] to-white"> {/* Utiliza min-h-screen para ajustarse al tamaño de la pantalla */}
+    <div className="w-full min-h-screen bg-gradient-to-b from-[#34cf6d] to-{white}"> {/* Utiliza min-h-screen para ajustarse al tamaño de la pantalla */}
       <Navbar />
       <div className="flex flex-col justify-center lg:mt-16 lg:mb-20 pt-5">
         <h1 className="text-3xl lg:text-4xl font-bold text-black m">Conéctate con la Tierra: 
