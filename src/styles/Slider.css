@@ -1,16 +1,34 @@
 /* Estilos personalizados para los botones de navegación */
 .swiper-button-next,
 .swiper-button-prev {
+    position: absolute;
   color: white; /* Cambia el color del icono */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia */
+  background-color: orange; /* Fondo naranja */
   padding: 10px;
-  border-radius: 50%; /* Redondea los botones */
+  border-radius: 0; /* Elimina el borde redondeado para hacerlos cuadrados */
   width: 40px;
   height: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
 }
+
+.swiper-button-next {
+    right: 70px;
+}
+.swiper-button-prev {
+    left: 70px;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo diferente al pasar el cursor */
-  color: black; /* Color del icono al hacer hover */
+  background-color: darkorange; /* Fondo más oscuro al pasar el cursor */
+  color: white; /* Mantiene el color blanco del icono al hacer hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5); /* Sombra más intensa al hacer hover */
 }
+
+
