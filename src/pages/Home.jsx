@@ -38,7 +38,7 @@ const Home = () => {
         {/* Primera Columna */}
         <div className="mb-5 order-2 lg:order-1 flex flex-col space-y-4 lg:w-1/3 gap-3">
           {menuItems1.map((item, index) => (
-           <MenuCard key={index} title={item.title} icon={item.icon} />
+           <MenuCard key={index} title={item.title} icon={item.icon} link={item.link}/>
           ))}
         </div>
 

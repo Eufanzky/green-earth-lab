@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-white text-2xl font-bold">
-          <a href="#">GreenEarthLab</a>
+          <a href="/">GreenEarthLab</a>
         </div>
 
         {/* Links (Hidden on small screens) */}
