@@ -76,7 +76,7 @@ const AIQuizzCreator = ({ data }) => {
     }
   };
 
-  /*const quizData = [
+  const quizData = [
     {
       optionA:
         "Las variaciones climáticas eran naturales, pero desde el siglo XVIII, el uso de combustibles fósiles ha aumentado significativamente los gases de efecto invernadero.",
@@ -157,19 +157,21 @@ const AIQuizzCreator = ({ data }) => {
       question:
         "La investigación de los anillos de árboles, sedimentos y capas de hielo tiene como objetivo principal:",
     },
-  ];*/
+  ];
 
   return (
     <>
-      <div className="p-4">
+      <div className="bg-gradient-to-b from-blue-500 to-[#FA8207]">
         <h2 className="text-xl font-bold">AI QUIZ CREATOR</h2>
         <button
-          className="mt-2 px-4 py-2 bg-blue-500 text-[#3F7E44] rounded-md"
+          className="mt-2 px-4 py-2 bg-[#FA8207] text-white rounded-md hover:bg-[#FA8C16] transition duration-300"
           onClick={handleGenerateStory}
         >
           Crear Preguntas
         </button>
         {story && <QuizGenerator quizData={story} />}
+
+        <QuizGenerator quizData={quizData}/>
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 // src/components/QuizGenerator.jsx
 import React, { useState } from 'react';
+import styles from '../styles/Glass.module.css';
 
 const QuizGenerator = ({ quizData }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -37,30 +38,30 @@ const QuizGenerator = ({ quizData }) => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <div className={`max-w-2xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg ${styles.glassStyle}`}>
   {showScore ? (
     <div className="text-center">
-      <h2 className="text-2xl font-bold text-green-600">Quiz Completed!</h2>
+      <h2 className="text-2xl font-bold text-green-600">Quiz Comepletado!</h2>
       <p className="text-lg mt-4">
-        Your score: {score} out of {quizData.length}
+        Tu puntaje: {score} de {quizData.length}
       </p>
       <button
         onClick={handleResetQuiz}
         className="mt-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
       >
-        Restart Quiz
+        Reiniciar Quiz
       </button>
     </div>
   ) : (
     <div>
       <h2 className="text-xl font-semibold text-gray-800">
-        Question {currentQuestionIndex + 1}
+        Pregunta {currentQuestionIndex + 1}
       </h2>
-      <p className="mt-4 text-gray-600">
+      <p className="mt-4 text-black">
         {quizData[currentQuestionIndex].question}
       </p>
-      <div className="mt-6 space-y-4">
-        <label className="block">
+      <div className="flex flex-col items-start mt-6 space-y-4">
+        <label className="w-full block bg-[#34cf6d] p-3 rounded-md border-[#3F7E44] border-2">
           <input
             type="radio"
             name="answer"
@@ -71,7 +72,7 @@ const QuizGenerator = ({ quizData }) => {
           />
           {quizData[currentQuestionIndex].optionA}
         </label>
-        <label className="block">
+        <label className="w-full block bg-[#34cf6d] p-3 rounded-md border-[#3F7E44] border-2">
           <input
             type="radio"
             name="answer"
@@ -82,7 +83,7 @@ const QuizGenerator = ({ quizData }) => {
           />
           {quizData[currentQuestionIndex].optionB}
         </label>
-        <label className="block">
+        <label className="w-full block bg-[#34cf6d] p-3 rounded-md border-[#3F7E44] border-2">
           <input
             type="radio"
             name="answer"
@@ -98,10 +99,10 @@ const QuizGenerator = ({ quizData }) => {
         onClick={handleSubmit}
         disabled={!selectedAnswer}
         className={`mt-6 py-2 px-4 rounded text-white ${
-          selectedAnswer ? 'bg-green-500 hover:bg-green-600' : 'bg-gray-400'
+          selectedAnswer ? 'bg-[#FA8207] hover:bg-white' : 'bg-gray-400'
         } transition duration-300`}
       >
-        Next
+        Siguiente
       </button>
     </div>
   )}
