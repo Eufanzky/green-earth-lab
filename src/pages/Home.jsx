@@ -61,7 +61,7 @@ const Home = () => {
               Conéctate con la Tierra:
             </h1>
             <h2 className="text-2xl lg:text-3xl font-semibold text-gray-700">
-              Aprende, Juega y Protege
+              Educar, Actuar y Transformar
             </h2>
           </div>
           <div>
