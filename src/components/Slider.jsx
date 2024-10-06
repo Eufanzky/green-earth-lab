@@ -8,7 +8,7 @@ import "swiper/css";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
+import '../styles/Slider.css'; 
 
 const Slider = ({ slides }) => {
   return (
@@ -28,9 +28,9 @@ const Slider = ({ slides }) => {
           <img
             src={slide.image}
             alt={slide.description}
-            className="w-full h-56 object-cover rounded-lg mb-10"
+            className="w-full h-52 object-cover rounded-lg mb-10"
           />
-          <p className='mt-10 text-white font-bold text-lg'>{slide.description}</p>
+          <p className='mt-10 text-white font-bold text-sm mb-10'>{slide.description}</p>
         </SwiperSlide>
       ))
     }

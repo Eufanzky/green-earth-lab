@@ -1,0 +1,16 @@
+/* Estilos personalizados para los botones de navegación */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white; /* Cambia el color del icono */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo con transparencia */
+  padding: 10px;
+  border-radius: 50%; /* Redondea los botones */
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo diferente al pasar el cursor */
+  color: black; /* Color del icono al hacer hover */
+}

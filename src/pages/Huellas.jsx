@@ -54,9 +54,9 @@ const Huellas = () => {
   return (
     <>
       <Navbar />
-      <div className="py-24 px-10">
-        <div className="flex justify-center items-center h-72 bg-[#3F7E44] ">
-          <div className="w-80">
+      <div className="py-10 px-10">
+        <div className="flex justify-center items-center h-100 bg-[#3F7E44] ">
+          <div className="py-10 w-80">
             <Slider slides={slides} />
           </div>
         </div>
