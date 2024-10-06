@@ -82,8 +82,8 @@ const Home = () => {
               alt={item.title}
               className="w-14 h-14 mb-2 transition-colors duration-300" // El icono también más ajustado
             />
-            <h3 className="text-lg font-semibold text-green-800 hover:text-white">{item.title}</h3>
-            <p className="text-sm text-gray-600 hover:text-white text-center">{item.description}</p> {/* Descripción debajo del título */}
+            <h3 className="text-lg font-semibold text-green-800 hover:text-black">{item.title}</h3>
+            <p className="text-sm text-gray-600 hover:text-black text-center">{item.description}</p> {/* Descripción debajo del título */}
           </a>
         ))}
       </div>
