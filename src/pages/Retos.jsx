@@ -1,8 +1,12 @@
 import React from 'react';
+import Navbar from "../components/NavBar";
 
 const Retos = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-500 to-green-500 flex flex-col items-center justify-center text-center space-y-6">
+    <>
+    <Navbar/>
+      <div className="min-h-screen bg-gradient-to-b from-blue-500 to-green-500 flex flex-col items-center justify-center text-center space-y-6">
+      
       <h1 className="text-7xl font-bold text-white mb-8 drop-shadow-lg animate-bounce">
         ¡Aprende jugando!
       </h1>
@@ -20,7 +24,7 @@ const Retos = () => {
             🔍 Adivina Quién Estuvo Aquí
           </a>
           <a
-            href="https://puzzel.org/es/matching-pairs/play?p=-O8Td9WwJ5OSYDyFUy2p"
+            href="https://puzzel.org/es/quiz/play?p=-O8TuuLI2PQUKbDNbBnX"
             className="border-2 border-black text-black bg-transparent px-8 py-6 rounded-full text-2xl font-semibold shadow-lg hover:bg-green-500 hover:text-white hover:border-green-500 transition duration-300 ease-in-out"
           >
             🌍 Verdad Climática
@@ -54,6 +58,9 @@ const Retos = () => {
         </div>
       </div>
     </div>
+
+    </>
+
   );
 };
 

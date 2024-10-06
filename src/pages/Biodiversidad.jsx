@@ -30,7 +30,7 @@ function Biodiversidad() {
     {
       image: b4,
       description:
-        'También conocido como "baiji", el delfín del río Yangtze fue visto por última vez en 2002. En 2006, investigadores recorrieron 3.200 kilómetros del río para encontrar uno, pero no tuvieron éxito. Según la Conservación de Ballenas y Delfines (WDC), el baiji es el primer delfín que se extingue por culpa del ser humano.Causa de la extinciónLas principales causas de su extinción fueron la sobrepesca, la contaminación, la pérdida de hábitat, la caza furtiva y el tráfico de barcos',
+        'También conocido como "baiji", el delfín del río Yangtze fue visto por última vez en 2002. En 2006, investigadores recorrieron 3.200 kilómetros del río para encontrar uno, pero no tuvieron éxito. Según la Conservación de Ballenas y Delfines (WDC), el baiji es el primer delfín que se extingue por culpa del ser humano, causa de la extinción. Las principales causas de su extinción fueron la sobrepesca, la contaminación, la pérdida de hábitat, la caza furtiva y el tráfico de barcos',
     },
     {
       image: b5,
@@ -40,7 +40,7 @@ function Biodiversidad() {
     {
       image: b6,
       description:
-        'El íbice de los Pirineos se extinguió oficialmente en 2000, pero fue "resucitado" en 2009 mediante un clon hecho con ADN de muestras conservadas. La cría sobrevivió el parto, pero murió poco después por problemas en los pulmones.Causa de la extinciónLa extinción fue causada por la caza excesiva en el siglo XIX.',
+        'El íbice de los Pirineos se extinguió oficialmente en 2000, pero fue "resucitado" en 2009 mediante un clon hecho con ADN de muestras conservadas. La cría sobrevivió el parto, pero murió poco después por problemas en los pulmones. Causa de la extinciónLa extinción fue causada por la caza excesiva en el siglo XIX.',
     },
     {
       image: b7,
