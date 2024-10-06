@@ -31,7 +31,7 @@ const Slider = ({ slides }) => {
             alt={slide.description}
             className="w-full h-52 object-cover rounded-lg mb-10 border-black border-2"
           />
-          <p className='mt-10 text-white font-bold text-sm mb-10'>{slide.description}</p>
+          <p className='mt-10 text-white font-bold text-lg mb-10'>{slide.description}</p>
 
           </div>
         </SwiperSlide>

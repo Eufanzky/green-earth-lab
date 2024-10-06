@@ -4,25 +4,11 @@ import "tailwindcss/tailwind.css";
 import Navbar from "../components/NavBar";
 import Slider from "../components/Slider";
 import styles from '../styles/Huellas.module.css';
+import PresentationTemplate from "../components/PresentationTemplate";
+
+
 
 const Curiosidades = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const images = [
-    { src: "../assets/react.svg", alt: "Image 1" },
-    { src: "../assets/react.svg", alt: "Image 2" },
-    { src: "../assets/react.svg", alt: "Image 3" },
-  ];
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
 
   const slides = [
     {
@@ -39,16 +25,14 @@ const Curiosidades = () => {
       },
   ];
 
+  const title = "La Urgencia de Proteger Nuestro Planeta: Costos y Realidades del Cambio Climático";
+  const description = "En un mundo cada vez más afectado por el cambio climático, la necesidad de preservar nuestros ecosistemas se vuelve crítica. La conservación de la naturaleza no solo es una cuestión de ética ambiental, sino también una decisión económica inteligente. Por ejemplo, mientras que construir infraestructuras costosas para proteger las costas, como muros marinos, puede alcanzar cifras astronómicas, conservar arrecifes naturales es significativamente más barato y sostenible. Además, 2016 marcó un hito como el año más cálido registrado, lo que nos recuerda la urgencia de actuar frente a las crecientes temperaturas y sus efectos devastadores. Es momento de reflexionar sobre nuestras acciones y tomar decisiones que prioricen la salud de nuestro planeta para las generaciones futuras."
+
+
   return (
     <>
       <Navbar />
-      <div className={`flex items-center justify-center py-10 px-10 ${styles.huellas_bg}`} >
-        <div className="max-w-3xl flex justify-center items-center h-100 bg-[#3F7E44] rounded-md border-black border-2">
-          <div className="py-10 w-full">
-            <Slider slides={slides} />
-          </div>
-        </div>
-      </div>
+      <PresentationTemplate title={title} description={description} slides={slides}/>
     </>
   );
 };

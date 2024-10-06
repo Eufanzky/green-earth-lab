@@ -4,26 +4,9 @@ import "tailwindcss/tailwind.css";
 import Navbar from "../components/NavBar";
 import Slider from "../components/Slider";
 import styles from '../styles/Huellas.module.css';
+import PresentationTemplate from "../components/PresentationTemplate";
 
 const Soluciones = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const images = [
-    { src: "../assets/react.svg", alt: "Image 1" },
-    { src: "../assets/react.svg", alt: "Image 2" },
-    { src: "../assets/react.svg", alt: "Image 3" },
-  ];
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
   const slides = [
     {
       image:
@@ -52,16 +35,14 @@ const Soluciones = () => {
     
   ];
 
+  const title = "Prácticas Sostenibles para un Futuro más Verde"
+  const description = "Enfrentar el cambio climático requiere adoptar prácticas sostenibles que reduzcan nuestra huella de carbono y promuevan la conservación del medio ambiente. La transición hacia fuentes de energía renovables como la solar, eólica, hidroeléctrica y geotérmica es fundamental para disminuir la dependencia de los combustibles fósiles y mitigar las emisiones de gases de efecto invernadero. Además, técnicas agrícolas como la agricultura orgánica, la permacultura y la agroecología fomentan la biodiversidad y optimizan el uso del agua, creando un ecosistema más saludable. La promoción del transporte público, el uso de bicicletas y vehículos eléctricos es esencial para reducir la contaminación del aire y aliviar la congestión urbana. Por último, la construcción de edificios con materiales sostenibles y sistemas de gestión eficiente del agua ayuda a minimizar el impacto ambiental, estableciendo un camino hacia un futuro más verde y sostenible."
+
+
   return (
     <>
       <Navbar />
-      <div className={`flex items-center justify-center py-10 px-10 ${styles.huellas_bg}`} >
-        <div className="max-w-3xl flex justify-center items-center h-100 bg-[#3F7E44] rounded-md border-black border-2">
-          <div className="py-10 w-full">
-            <Slider slides={slides} />
-          </div>
-        </div>
-      </div>
+      <PresentationTemplate title={title} description={description} slides={slides}/>
     </>
   );
 };

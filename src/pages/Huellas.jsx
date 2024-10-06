@@ -3,26 +3,12 @@ import React, { useState } from "react";
 import "tailwindcss/tailwind.css";
 import Navbar from "../components/NavBar";
 import Slider from "../components/Slider";
-import styles from '../styles/Huellas.module.css';
+import styles from "../styles/Huellas.module.css";
+import stylesGlass from "../styles/Glass.module.css"; // Importa el archivo CSS correctamente
+import PresentationTemplate from "../components/PresentationTemplate";
+
 
 const Huellas = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const images = [
-    { src: "../assets/react.svg", alt: "Image 1" },
-    { src: "../assets/react.svg", alt: "Image 2" },
-    { src: "../assets/react.svg", alt: "Image 3" },
-  ];
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
 
   const slides = [
     {
@@ -75,16 +61,13 @@ const Huellas = () => {
     },
   ];
 
+  const title = "Explora las Huellas del Pasado en el Cambio Climático";
+  const description = "Las huellas del pasado son vitales para entender cómo nuestro planeta ha respondido a los cambios climáticos a lo largo de la historia. A través de la investigación de anillos de árboles, sedimentos y capas de hielo, podemos descifrar patrones climáticos y eventos históricos que han moldeado nuestro entorno. Estos registros no solo nos brindan una visión sobre las condiciones climáticas del pasado, sino que también nos enseñan valiosas lecciones sobre la resiliencia de los ecosistemas y la capacidad de adaptación de las sociedades humanas. Al aprender de las experiencias del pasado, podemos enfrentar los desafíos climáticos actuales y futuros con conocimiento y determinación, trabajando juntos por un mundo más sostenible."
+
   return (
     <>
       <Navbar />
-      <div className={`flex items-center justify-center py-10 px-10 ${styles.huellas_bg}`} >
-        <div className="max-w-3xl flex justify-center items-center h-100 bg-[#3F7E44] rounded-md border-2">
-          <div className="py-10 w-full">
-            <Slider slides={slides} />
-          </div>
-        </div>
-      </div>
+      <PresentationTemplate title={title} description={description} slides={slides} />
     </>
   );
 };
