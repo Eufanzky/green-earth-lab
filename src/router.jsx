@@ -7,7 +7,8 @@ import About from './pages/About';
 import Huellas from './pages/Huellas';
 import Retos from './pages/Retos';
 import Soluciones from './pages/Soluciones';
-import Curiosidades from './pages/Curiosidades'
+import Curiosidades from './pages/Curiosidades';
+import Biodiversidad from './pages/Biodiversidad';
 import NotFound from './pages/NotFound';
 
 const AppRouter = () => {
@@ -20,6 +21,7 @@ const AppRouter = () => {
         <Route path="/retos" element={<Retos />} />
         <Route path="/soluciones" element={<Soluciones />} />
         <Route path="/curiosidades" element={<Curiosidades />} />
+        <Route path="/Biodiversidad" element={<Biodiversidad />} />
         <Route path="*" element={<NotFound />} /> {/* 404 Page */}
       </Routes>
     </Router>
