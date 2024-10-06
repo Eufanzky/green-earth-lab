@@ -2,7 +2,7 @@ import React from 'react';
 
 const Retos = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-green-400 to-blue-500 flex flex-col items-center justify-center text-center">
+    <div className="min-h-screen bg-gradient-to-b from-green-600 via-green-400 to-green-200 flex flex-col items-center justify-center text-center">
       <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
         Aprende cumpliendo retos
       </h1>
@@ -12,28 +12,51 @@ const Retos = () => {
         nuevas maneras de contribuir a un futuro mejor.
       </p>
       
-      <div className="flex space-x-4">
-        <a
-          href="https://example.com/reto1"
-          className="bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-green-600 hover:text-white transition duration-300"
-        >
-          Reto 1
-        </a>
-        <a
-          href="https://example.com/reto2"
-          className="bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-green-600 hover:text-white transition duration-300"
-        >
-          Reto 2
-        </a>
-        <a
-          href="https://example.com/reto3"
-          className="bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-green-600 hover:text-white transition duration-300"
-        >
-          Reto 3
-        </a>
+      <div className="space-y-4">
+        <div className="flex space-x-4">
+          <a
+            href="https://puzzel.org/es/matching-pairs/play?p=-O8Td9WwJ5OSYDyFUy2p"
+            className="bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-green-600 hover:text-white transition duration-300"
+          >
+            Adivina Quién Estuvo Aquí
+          </a>
+          <a
+            href="https://puzzel.org/es/matching-pairs/play?p=-O8Td9WwJ5OSYDyFUy2p"
+            className="bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-green-600 hover:text-white transition duration-300"
+          >
+            Verdad Climática
+          </a>
+          <a
+            href="https://puzzel.org/es/crossword/play?p=-O8THX1M8Gf_ZmSs-A6l"
+            className="bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-green-600 hover:text-white transition duration-300"
+          >
+            Crucigrama
+          </a>
+        </div>
+        <div className="flex space-x-4 justify-center">
+          <a
+            href="https://puzzel.org/es/crossword/play?p=-O8THX1M8Gf_ZmSs-A6l"
+            className="bg-white text-green-600 px-4 py-2 rounded-full font-semibold shadow-md hover:bg-green-600 hover:text-white transition duration-300"
+          >
+            Rompecabezas climatico
+          </a>
+          <a
+            href="https://puzzel.org/es/crossword/play?p=-O8THX1M8Gf_ZmSs-A6l"
+            className="bg-white text-green-600 px-4 py-2 rounded-full font-semibold shadow-md hover:bg-green-600 hover:text-white transition duration-300"
+          >
+            Adivina el pasado
+          </a>
+          <a
+            href="https://puzzel.org/es/crossword/play?p=-O8THX1M8Gf_ZmSs-A6l"
+            className="bg-white text-green-600 px-4 py-2 rounded-full font-semibold shadow-md hover:bg-green-600 hover:text-white transition duration-300"
+          >
+            verdad o fire
+          </a>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Retos;
+

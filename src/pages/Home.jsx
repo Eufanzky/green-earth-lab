@@ -20,7 +20,7 @@ const Home = () => {
   const menuItems2 = [
     { title: 'Biodiversidad en Peligro', icon: icon4, link: '/biodiversidad' },
     { title: 'Curiosidades Verdes', icon: icon5, link: '/curiosidades' },
-    { title: 'Reto GreenEarth', icon: icon6, link: '/reto' },
+    { title: 'Reto GreenEarth', icon: icon6, link: '/retos' },
   ];
 
   return (
