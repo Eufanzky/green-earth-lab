@@ -79,7 +79,7 @@ const Huellas = () => {
     <>
       <Navbar />
       <div className={`flex items-center justify-center py-10 px-10 ${styles.huellas_bg}`} >
-        <div className="max-w-3xl flex justify-center items-center h-100 bg-[#3F7E44] rounded-md border-black border-2">
+        <div className="max-w-3xl flex justify-center items-center h-100 bg-[#3F7E44] rounded-md border-2">
           <div className="py-10 w-full">
             <Slider slides={slides} />
           </div>
