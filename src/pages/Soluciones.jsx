@@ -5,6 +5,8 @@ import Navbar from "../components/NavBar";
 import Slider from "../components/Slider";
 import styles from '../styles/Huellas.module.css';
 import PresentationTemplate from "../components/PresentationTemplate";
+import AIQuizzCreator from "../components/AIQuizzCreator";
+
 
 const Soluciones = () => {
   const slides = [
@@ -38,11 +40,18 @@ const Soluciones = () => {
   const title = "Prácticas Sostenibles para un Futuro más Verde"
   const description = "Enfrentar el cambio climático requiere adoptar prácticas sostenibles que reduzcan nuestra huella de carbono y promuevan la conservación del medio ambiente. La transición hacia fuentes de energía renovables como la solar, eólica, hidroeléctrica y geotérmica es fundamental para disminuir la dependencia de los combustibles fósiles y mitigar las emisiones de gases de efecto invernadero. Además, técnicas agrícolas como la agricultura orgánica, la permacultura y la agroecología fomentan la biodiversidad y optimizan el uso del agua, creando un ecosistema más saludable. La promoción del transporte público, el uso de bicicletas y vehículos eléctricos es esencial para reducir la contaminación del aire y aliviar la congestión urbana. Por último, la construcción de edificios con materiales sostenibles y sistemas de gestión eficiente del agua ayuda a minimizar el impacto ambiental, estableciendo un camino hacia un futuro más verde y sostenible."
 
+  const data = {
+    title,
+    description,
+    slides
+  }
+
 
   return (
     <>
       <Navbar />
       <PresentationTemplate title={title} description={description} slides={slides}/>
+      <AIQuizzCreator data={data}/>
     </>
   );
 };
