@@ -10,8 +10,9 @@ const PresentationTemplate = ({ title, description, slides }) => {
     <div
       className={`pt-50 flex flex-col items-center justify-center py-10 px-10 bg-gradient-to-b from-[#34cf6d] to-[#3F7E44] ${styles.huellas_bg}`}
     >
-      <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
-      <p className="text-lg text-white mb-6 px-36">{description}</p>
+        <h2 className="text-3xl font-bold text-black mb-6">{title}</h2>
+        <p className="text-lg text-black mb-10 px-36">{description}</p>
+
       <div
         className={`max-w-2xl flex justify-center items-center h-100 bg-[#3F7E44] rounded-md border-black border-2 ${stylesGlass.glassStyle}`}
       >
