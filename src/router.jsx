@@ -13,6 +13,7 @@ import Clima from './pages/Clima';
 import Ods from './pages/ODS';
 import NotFound from './pages/NotFound';
 import { Recursos } from './pages/Recursos';
+import { Noticias } from './pages/Noticias';
 
 const AppRouter = () => {
   return (
@@ -28,6 +29,7 @@ const AppRouter = () => {
         <Route path="/clima" element={<Clima />} />
         <Route path="/ods" element={<Ods />} />
         <Route path="/recursos" element={<Recursos />} />
+        <Route path="/noticias" element={<Noticias />} />
         <Route path="*" element={<NotFound />} /> {/* 404 Page */}
       </Routes>
     </Router>

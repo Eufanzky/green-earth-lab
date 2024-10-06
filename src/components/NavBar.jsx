@@ -20,7 +20,7 @@ const Navbar = () => {
           <a href="/ods" className="hover:text-gray-300">
             Desafíos ODS
           </a>
-          <a href="#" className="hover:text-gray-300">
+          <a href="/noticias" className="hover:text-gray-300">
             Noticias
           </a>
           <a href="#" className="hover:text-gray-300">
